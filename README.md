@@ -33,7 +33,7 @@ A modern, full-stack AI chat application built with TanStack Start, featuring mu
 ### AI Providers
 - **OpenAI** - GPT-4o, GPT-4o Mini
 - **Anthropic** - Claude 3.5 Sonnet, Claude 3.5 Haiku
-- **Google** - Gemini 1.5 Pro, Gemini 1.5 Flash
+- **Google** - Gemini 2.5 Pro, Gemini 2.5 Flash
 
 > **Note:** AI model availability depends on [@tanstack/ai](https://www.npmjs.com/package/@tanstack/ai) and its provider adapters. Check the [TanStack AI documentation](https://tanstack.com/ai) for the latest supported models and providers.
 
@@ -51,7 +51,7 @@ A modern, full-stack AI chat application built with TanStack Start, featuring mu
 ### 1. Clone and Install
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/rs-4/tanstack-ai-demo.git
 cd tanstack-ai-demo
 npm install
 ```
