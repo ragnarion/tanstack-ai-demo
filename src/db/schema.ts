@@ -1,4 +1,11 @@
-import { pgTable, varchar, text, timestamp, boolean, index } from 'drizzle-orm/pg-core'
+import {
+  pgTable,
+  varchar,
+  text,
+  timestamp,
+  boolean,
+  index,
+} from 'drizzle-orm/pg-core'
 
 // Helper to generate IDs
 const generateId = () => crypto.randomUUID()
@@ -31,5 +38,5 @@ export const messages = pgTable(
   (table) => [
     index('messages_chat_id_idx').on(table.chatId),
     index('messages_chat_id_created_at_idx').on(table.chatId, table.createdAt),
-  ]
+  ],
 )
