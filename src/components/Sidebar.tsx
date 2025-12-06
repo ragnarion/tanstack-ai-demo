@@ -5,6 +5,7 @@ import { ScrollArea } from './ui/scroll-area'
 import { Plus, MessageSquare, Pin } from 'lucide-react'
 import { getChats, createChat } from '@/lib/chat-actions'
 import { cn } from '@/lib/utils'
+import { s } from 'node_modules/vite/dist/node/chunks/moduleRunnerTransport'
 
 interface ChatItem {
     id: string
@@ -23,7 +24,7 @@ export function Sidebar({ activeChatId }: { activeChatId?: string }) {
     })
 
     const createChatMutation = useMutation({
-        mutationFn: () => createChat({ data: { title: 'New Chat' } }),
+        mutationFn: () => createChat({ data: { title: 'New Chat' } as any }),
         onSuccess: (newChat) => {
             queryClient.invalidateQueries({ queryKey: ['chats'] })
             navigate({ to: '/chat/$chatId', params: { chatId: newChat.id } })

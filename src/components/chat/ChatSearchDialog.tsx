@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from '@tanstack/react-router'
 import { Search, MessageSquare, FileText, X } from 'lucide-react'
-import { Dialog, DialogContent } from './ui/dialog'
+import { Dialog, DialogContent } from '../ui/dialog'
 import { searchChats } from '@/lib/chat-actions'
 
 export function ChatSearchDialog() {

@@ -1,6 +1,6 @@
 import { Bot } from 'lucide-react'
 import type { Message } from '@/types'
-import { MessageBubble, TypingIndicator, StreamingMessage } from '../MessageBubble'
+import { MessageBubble, TypingIndicator, StreamingMessage } from './MessageBubble'
 
 
 interface EmptyChatStateProps {

@@ -1,7 +1,7 @@
 import { Menu } from 'lucide-react'
 import { Button } from './ui/button'
 import { ThemeToggle } from './ThemeToggle'
-import { ModelSelector } from './ModelSelector'
+import { ModelSelector } from './chat/ModelSelector'
 import { useSidebar } from './ui/sidebar'
 
 export default function Header() {

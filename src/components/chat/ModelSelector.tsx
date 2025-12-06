@@ -1,6 +1,6 @@
 import { useStore } from '@tanstack/react-store'
 import { ChevronDown, Sparkles } from 'lucide-react'
-import { Button } from './ui/button'
+import { Button } from '../ui/button'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -9,7 +9,7 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from './ui/dropdown-menu'
+} from '../ui/dropdown-menu'
 import { settingsStore, setProviderAndModel, AI_PROVIDERS } from '@/lib/store'
 
 export function ModelSelector() {

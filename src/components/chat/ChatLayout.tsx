@@ -1,8 +1,8 @@
 import { PanelLeft } from 'lucide-react'
-import { Button } from './ui/button'
-import { ThemeToggle } from './ThemeToggle'
+import { Button } from '../ui/button'
+import { ThemeToggle } from '../ThemeToggle'
 import { ModelSelector } from './ModelSelector'
-import { SidebarProvider, useSidebar } from './ui/sidebar'
+import { SidebarProvider, useSidebar } from '../ui/sidebar'
 import { ChatSidebar } from './ChatSidebar'
 
 interface ChatLayoutProps {

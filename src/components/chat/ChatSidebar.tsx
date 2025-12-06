@@ -1,8 +1,8 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { Link, useNavigate } from '@tanstack/react-router'
 import { Plus, MessageSquare, Pin } from 'lucide-react'
-import { Button } from './ui/button'
-import { ScrollArea } from './ui/scroll-area'
+import { Button } from '../ui/button'
+import { ScrollArea } from '../ui/scroll-area'
 import { getChats, createChat } from '@/lib/chat-actions'
 import { ChatSearchDialog } from './ChatSearchDialog'
 import {
@@ -15,7 +15,7 @@ import {
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem,
-} from './ui/sidebar'
+} from '../ui/sidebar'
 
 interface ChatSidebarProps {
     activeChatId?: string

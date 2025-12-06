@@ -9,7 +9,7 @@ import {
 } from '@/lib/chat-actions'
 import { settingsStore } from '@/lib/store'
 import { ChatInput } from './ChatInput'
-import { EmptyChatState, MessageList } from './chat/ChatMessages'
+import { EmptyChatState, MessageList } from './ChatMessages'
 import type { Message } from '@/types'
 
 interface ChatProps {
@@ -19,7 +19,6 @@ interface ChatProps {
 
 export function Chat({ chatId, initialMessages = [] }: ChatProps) {
     const [messages, setMessages] = useState<Message[]>(initialMessages)
-    const [input, setInput] = useState('')
     const [isStreaming, setIsStreaming] = useState(false)
     const [streamingContent, setStreamingContent] = useState('')
     const messagesEndRef = useRef<HTMLDivElement>(null)
@@ -38,11 +37,8 @@ export function Chat({ chatId, initialMessages = [] }: ChatProps) {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
     }, [messages, streamingContent])
 
-    const handleSubmit = async () => {
-        if (!input.trim() || isStreaming) return
-
-        const userContent = input.trim()
-        setInput('')
+    const handleSubmit = async (userContent: string) => {
+        if (!userContent.trim() || isStreaming) return
 
         const userMessage: Message = {
             id: crypto.randomUUID(),
@@ -137,12 +133,7 @@ export function Chat({ chatId, initialMessages = [] }: ChatProps) {
 
             {/* Floating input */}
             <div className="shrink-0">
-                <ChatInput
-                    value={input}
-                    onChange={setInput}
-                    onSubmit={handleSubmit}
-                    isLoading={isStreaming}
-                />
+                <ChatInput onSubmit={handleSubmit} isLoading={isStreaming} />
             </div>
         </div>
     )

@@ -6,6 +6,7 @@ A modern, full-stack AI chat application built with TanStack Start, featuring mu
 
 - 🤖 **Multi-Provider AI Support** - OpenAI, Anthropic Claude, and Google Gemini
 - 💬 **Real-time Streaming** - Natural typing animation for AI responses
+- ✅ **Form Validation** - TanStack Form with built-in validators for robust input validation
 - 🔍 **Full-Text Search** - Search across chat titles and message content (⌘K)
 - 📱 **Responsive Design** - Mobile-first with collapsible sidebar
 - 🌓 **Dark Mode** - System-aware theme with manual override
@@ -18,6 +19,7 @@ A modern, full-stack AI chat application built with TanStack Start, featuring mu
 - **[TanStack Start](https://tanstack.com/start)** - Full-stack React framework
 - **[TanStack Router](https://tanstack.com/router)** - Type-safe routing
 - **[TanStack Query](https://tanstack.com/query)** - Data fetching and caching
+- **[TanStack Form](https://tanstack.com/form)** - Powerful form validation
 - **[React](https://react.dev)** - UI library
 - **[Tailwind CSS](https://tailwindcss.com)** - Utility-first CSS
 - **[shadcn/ui](https://ui.shadcn.com)** - Re-usable components
